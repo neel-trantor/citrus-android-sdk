@@ -38,7 +38,7 @@ ___
 
 <b> How to import CitrusLibrary in your Project? </b>
 
-      git clone https://github.com/citruspay/open-android-v3.git
+      compile 'com.citrus.sdk:payment-sdk:3.0.29'
 
 <h2>Lets Start...</h2>
 
