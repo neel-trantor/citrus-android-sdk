@@ -1,4 +1,4 @@
-# open-android-v3
+# Citrus Payments Android SDK
 
 Welcome to the open-source Android SDK Documentation of Citrus Payments Solution!
 
