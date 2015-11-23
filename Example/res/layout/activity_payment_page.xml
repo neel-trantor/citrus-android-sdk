@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.citrus.sample.PaymentPage">
+
+
+    <Button
+        android:id="@+id/cardpayment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Card Payment"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/tokenpayment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Token Payment"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/bankpay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Net Banking"
+        android:layout_marginBottom="20dp"/>
+    
+    <Button
+        android:id="@+id/walletpay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Citrus Cash Payment"
+        android:layout_marginBottom="20dp"/>
+    
+
+</LinearLayout>

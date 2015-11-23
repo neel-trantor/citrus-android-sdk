@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bind Sample</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_toggle_production">Use Production</string>
+    <string name="title_activity_payment_page">PaymentPage</string>
+    <string name="title_activity_web_page">WebPage</string>
+    <string name="title_activity_prepaid">Prepaid</string>
+    <string name="title_activity_widgets">Widgets</string>
+    <string name="title_activity_walletpay">Walletpay</string>
+    <string name="title_activity_test_webview">TestWebview</string>
+    <string name="title_activity_prepaid_functions">PrepaidFunctions</string>
+    <string name="title_activity_ui">Citrus Merchant</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="card_number_hint">Enter card number</string>
+    <string name="card_name_hint">Enter card holder name</string>
+    <string name="card_nick_name_hint">Enter nick name</string>
+
+    <string name="dp_request_prompt">Select the DP Request Type</string>
+    <string-array name="dp_request_types_values">
+        <item>Search And Apply Rule (Depending Upon Selected Payment Option)</item>
+        <item>Apply Coupon Or Rule</item>
+        <item>Validate Rule (With Coupon Code and Altered Amount)</item>
+
+    </string-array>
+
+</resources>

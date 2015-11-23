@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.citrus.widgets.CardNumberEditText 
+        android:id="@+id/cardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:inputType="number|none"
+        android:hint="Card Number?"/>
+	
+    <com.citrus.widgets.ExpiryDate 
+        android:id="@+id/expdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:inputType="number|none"
+        android:hint="ExpDate"/>
+    
+</LinearLayout>

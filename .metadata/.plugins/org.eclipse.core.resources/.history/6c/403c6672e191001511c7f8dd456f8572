@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="BaseAppThemeLight" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:colorAccent">@color/toggleColor</item>
+        <item name="android:colorControlActivated">@color/appbg</item>
+        <item name="android:colorControlHighlight">@color/toggleColor</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/appbg</item>
+    </style>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="PagerIndicatorDefaultNewWithDivider" parent="@style/Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="vpiIconPageIndicatorStyle">@style/IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/TabPageIndicatorDivider</item>
+
+    </style>
+
+
+    <style name="TabPageIndicatorDivider" parent="@style/Theme.AppCompat.Light">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/custom_tab_indicator_profile</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:divider">@android:color/white</item>
+        <item name="android:dividerPadding">0dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+
+    <style name="IconPageIndicator" parent="Widget">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+
+</resources>

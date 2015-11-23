@@ -1,0 +1,105 @@
+<!--
+  ~ /*
+  ~    Copyright 2014 Citrus Payment Solutions Pvt. Ltd.
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~ */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/citrus_activity_vertical_margin"
+    android:paddingLeft="@dimen/citrus_activity_horizontal_margin"
+    android:paddingRight="@dimen/citrus_activity_horizontal_margin"
+    android:paddingTop="@dimen/citrus_activity_vertical_margin"
+    tools:context="com.citrus.sample.OTPDemoActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Debit" />
+
+        <RadioButton
+            android:id="@+id/radioCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit" />
+    </RadioGroup>
+
+    <com.citrus.widgets.CardNumberEditText
+        android:id="@+id/cardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_margin="20dp"
+        android:hint="Card Number"
+        android:inputType="number|none" />
+
+
+    <EditText
+        android:id="@+id/txt_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardnumber"
+        android:layout_margin="20dp"
+        android:hint="Name on the card"
+        android:singleLine="true" />
+
+    <com.citrus.widgets.ExpiryDate
+        android:id="@+id/expdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_card_name"
+        android:layout_margin="20dp"
+        android:hint="ExpDate"
+        android:inputType="number|none"
+        android:maxLength="7" />
+
+    <EditText
+        android:id="@+id/txt_cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_card_name"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/expdate"
+        android:hint="CVV"
+        android:inputType="number|none"
+        android:maxLength="4"
+        android:password="true" />
+
+    <EditText
+        android:id="@+id/txt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expdate"
+        android:layout_margin="20dp"
+        android:hint="Transaction Amount"
+        android:inputType="number|none" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Pay" />
+
+</RelativeLayout>

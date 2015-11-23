@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.citrus.sample.WebPage">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    
+    <TextView android:id="@+id/otpText"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="wrap_content"
+        	  android:layout_above="@+id/submitButton"
+        	  android:textSize="20sp"
+        	  android:layout_centerHorizontal="true"/>
+    
+    <Button android:id="@+id/submitButton"
+        	android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:text="Submit"
+        	android:visibility="invisible"
+        	android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_for_dp_request_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/citrus_activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Dynamic Pricing Request Type" />
+
+        <Spinner
+            android:id="@+id/spinner_dp_request_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/dp_request_types_values"
+            android:paddingTop="@dimen/abc_action_bar_default_padding_material"
+            android:prompt="@string/dp_request_prompt">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_for_transaction_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/citrus_activity_horizontal_margin">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Amount" />
+
+        <EditText
+            android:id="@+id/edit_txn_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Transaction Amount" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_for_coupon_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/citrus_activity_horizontal_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coupon Code or Rule Name" />
+
+        <EditText
+            android:id="@+id/edit_coupon_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Coupon Code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_for_altered_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/citrus_activity_horizontal_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altered Amount" />
+
+        <EditText
+            android:id="@+id/edit_altered_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Altered Amount" />
+    </LinearLayout>
+
+</LinearLayout>
