@@ -5,17 +5,21 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(include: '*.jar', dir: 'libs')
-    compile project(':citruslibrary')
+//    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.citrus.sdk:payment-sdk:3.0.33'
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.mcxiaoke.viewpagerindicator:library:2.4.1@aar'
     compile 'com.android.support:cardview-v7:23.0.1'
     compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.orhanobut:logger:1.8'
+    compile 'de.greenrobot:eventbus:2.4.0'
 }
 
 android {
     compileSdkVersion 23
     buildToolsVersion '23.0.1'
+
+    useLibrary 'org.apache.http.legacy'
 
     sourceSets {
         main {
@@ -39,5 +43,18 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    // To enable larger heap size
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        // Enabling multidex support.
+        multiDexEnabled true
     }
 }
