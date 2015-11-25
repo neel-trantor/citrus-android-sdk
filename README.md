@@ -38,7 +38,7 @@ ___
 
 <b> How to import CitrusLibrary in your Project? </b>
 
-      compile 'com.citrus.sdk:payment-sdk:3.0.29'
+      compile 'com.citrus.sdk:payment-sdk:3.0.33'
 
 <h2>Lets Start...</h2>
 
