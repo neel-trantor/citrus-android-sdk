@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/otp_options_header_top_margin"
+        android:gravity="center"
+        android:text="@string/otp_options_header_text"
+        android:textColor="#737373"
+        android:textSize="@dimen/otp_options_header_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/otp_options_layout_top_margin"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/enterPasswordLayoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/otp_options_enter_pass_layout_right_margin"
+            android:layout_marginRight="@dimen/otp_options_enter_pass_layout_right_margin"
+            android:background="@drawable/optionbutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/enterPasswordImgViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/enterpassword" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/otp_options_enter_pass_textsize"
+                android:text="@string/otp_options_enter_pass_text"
+                android:textColor="#383838" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enterOtpLayoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/otp_options_send_otp_layout_margin_left"
+            android:layout_marginStart="@dimen/otp_options_send_otp_layout_margin_left"
+            android:background="@drawable/optionbutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/sendOtpImgViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/otpicon" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/otp_options_send_otp_textsize"
+                android:textColor="#383838"
+                android:text="@string/otp_options_send_otp_text"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/otp_txn_bottom_bar" />
+
+
+</LinearLayout><!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/layout/otp_txn_options.xml -->

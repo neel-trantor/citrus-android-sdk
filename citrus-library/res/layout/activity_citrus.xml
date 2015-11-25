@@ -1,11 +1,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.citrus.sdk.CitrusActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.citrus.sdk.CitrusActivity">
+
 
     <WebView
         android:id="@+id/payment_webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></WebView>
+        android:layout_height="match_parent" />
 
+    <FrameLayout
+        android:id="@+id/otpPopupOverlayId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#242424"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/otp_popup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.citrus.sdk.otp.OTPPopupView
+            android:id="@+id/otpPopupViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/otpPopupCancelImgViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_down_icon" />
+
+        <LinearLayout
+            android:id="@+id/otpPopupSeparatorId"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/separator"
+            android:orientation="horizontal" />
+
+    </FrameLayout>
 </RelativeLayout>
 <!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/layout/activity_citrus.xml -->

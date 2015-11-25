@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/otp_bottom_bar_layout_top_margin">
+
+    <TextView
+        android:id="@+id/cancelTransactionTxtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/otp_cancel_transaction_text"
+        android:textColor="#626262"
+        android:textSize="@dimen/otp_bottom_bar_cancel_txn_textsize" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelTransactionTxtId"
+        android:layout_marginTop="@dimen/otp_bottom_bar_top_margin"
+        android:background="#e9e9e9">
+        <!--android:background="#e8e8e8"-->
+        <ImageView
+            android:id="@+id/citrusLogoImgViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/otp_bottom_bar_secured_image_top_margin"
+            android:background="@drawable/secured" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/citrusLogoImgViewId"
+            android:layout_toRightOf="@id/citrusLogoImgViewId"
+            android:text="@string/otp_secured_text"
+            android:textColor="#242424"
+            android:textSize="@dimen/otp_bottom_bar_secured_text_size" />
+
+        <ImageView
+            android:id="@+id/bankLogoImgViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/otp_bottom_bar_bank_logo_margin"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/bankNameTextViewId"
+            android:layout_toStartOf="@+id/bankNameTextViewId"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/bankNameTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="#242424"
+            android:textSize="@dimen/otp_bottom_bar_secured_text_size" />
+
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/layout/otp_txn_bottom_bar.xml -->

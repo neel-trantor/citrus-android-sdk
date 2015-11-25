@@ -12,6 +12,9 @@
 bin/
 gen/
 
+*/bin/
+*/gen/
+
 # Gradle files
 .gradle/
 build/
@@ -28,3 +31,5 @@ proguard/
 
 .metadata
 .recommenders
+
+RemoteSystemsTempFiles/
