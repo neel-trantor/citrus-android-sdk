@@ -52,11 +52,13 @@ final class SavedOptionsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
             if (paymentOption instanceof NetbankingOption) {
                 itemHolder.paymentOptionName.setText(((NetbankingOption) paymentOption).getBankName());
+                itemHolder.paymentOptionName.setText("\t" + ((NetbankingOption) paymentOption).getBankName());
                 Drawable mNetBankIconDrawable = paymentOption.getOptionIcon(mActivity);
                 itemHolder.paymentOptionName.setCompoundDrawablesWithIntrinsicBounds(mNetBankIconDrawable, null, null, null);
 
             } else if (paymentOption instanceof CardOption) {
                 itemHolder.paymentOptionName.setText(((CardOption) paymentOption).getCardNumber());
+                itemHolder.paymentOptionName.setText("\t" + ((CardOption) paymentOption).getCardNumber());
                 Drawable mCardIconDrawable = paymentOption.getOptionIcon(mActivity);
                 itemHolder.paymentOptionName.setCompoundDrawablesWithIntrinsicBounds(mCardIconDrawable, null, null, null);
                 itemHolder.paymentOptionBankName.setText(paymentOption.getName());
