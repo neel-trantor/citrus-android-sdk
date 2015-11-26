@@ -2,6 +2,19 @@
 
 Welcome to the open-source Android SDK Documentation of Citrus Payments Solution!
 
+### Download
+#### Gradle
+
+    compile 'com.citrus.sdk:payment-sdk:3.0.33'
+      
+#### Eclipse
+    
+    * Get the code git clone https://github.com/citruspay/citrus-android-sdk.git
+    * Import citrus-library project in your workspace
+    * Copy files from Example/libs into your apps libs folder
+    * You are good to go!
+
+___
 <h5>Introduction</h5>
 ___
 * This document details the merchant's <b>Android App</b> integration with Citrus Payment gateway.There is a difference between <b>Normal(PG) Payment</b> and <b>Prepaid Payment</b>!
@@ -34,11 +47,6 @@ ___
 
 <h2> Prerequisites </h2>
 * <a href="docs/Prerequisite.md" target="_blank">Before you Start</a>
-
-
-<b> How to import CitrusLibrary in your Project? </b>
-
-      compile 'com.citrus.sdk:payment-sdk:3.0.33'
 
 <h2>Lets Start...</h2>
 
