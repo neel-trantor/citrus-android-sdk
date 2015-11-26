@@ -21,7 +21,7 @@ ___
 * <b>Normal</b> payment requires only <b>email</b> and <b>mobile</b>. Citrus User account will be created by only using email and mobile combination. We call it as <b><i>Bind</i></b>. Once user is Bind, card can be saved against his account, saved cards can be fetched against his account.
 * <b>Prepaid</b> Payment requires <b>email</b> and <b>password</b>. Citrus User account will be created by using email and password combination. We call it prepaid account.
 
-open-android-v3 is enhanced [version](docs/Version%20History.md) of SDK V2 wherein you can implement your App with features such as:
+This is enhanced [version](docs/Version%20History.md) of SDK V2 wherein you can implement your App with features such as:
 
 * Pay using Credit Card/Debit Card & Netbanking 
 * Pay Using Citrus Cash - user can make a payment using Citrus Cash account if he has sufficient amount for payment. 
