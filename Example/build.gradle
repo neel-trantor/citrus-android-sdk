@@ -5,7 +5,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.citrus.sdk:payment-sdk:3.0.34'
+    compile 'com.citrus.sdk:payment-sdk:3.0.35'
     compile 'com.android.support:support-v4:22.0.0'
     compile 'com.mcxiaoke.viewpagerindicator:library:2.4.1@aar'
     compile 'com.android.support:recyclerview-v7:23.0.1'
