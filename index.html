@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Citrus-android-sdk by citruspay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Citrus-android-sdk</h1>
+      <h2 class="project-tagline">Enhanced Payment SDK from Citrus Payments.</h2>
+      <a href="https://github.com/citruspay/citrus-android-sdk" class="btn">View on GitHub</a>
+      <a href="https://github.com/citruspay/citrus-android-sdk/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/citruspay/citrus-android-sdk/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="citrus-payments-android-sdk" class="anchor" href="#citrus-payments-android-sdk" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citrus Payments Android SDK</h1>
+
+<p>Welcome to the open-source Android SDK Documentation of Citrus Payments Solution!</p>
+
+<h3>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h3>
+
+<h4>
+<a id="gradle" class="anchor" href="#gradle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gradle</h4>
+
+<pre><code>compile 'com.citrus.sdk:payment-sdk:3.0.35'
+</code></pre>
+
+<h4>
+<a id="eclipse" class="anchor" href="#eclipse" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eclipse</h4>
+
+<pre><code>* Get the code git clone https://github.com/citruspay/citrus-android-sdk.git
+* Import citrus-library project in your workspace
+* Copy files from Example/libs into your apps libs folder
+* You are good to go!
+</code></pre>
+
+<hr>
+
+<h5>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h5>
+
+<hr>
+
+<ul>
+<li>This document details the merchant's <b>Android App</b> integration with Citrus Payment gateway.There is a difference between <b>Normal(PG) Payment</b> and <b>Prepaid Payment</b>!</li>
+<li>
+<b>Normal</b> payment requires only <b>email</b> and <b>mobile</b>. Citrus User account will be created by only using email and mobile combination. We call it as <b><i>Bind</i></b>. Once user is Bind, card can be saved against his account, saved cards can be fetched against his account.</li>
+<li>
+<b>Prepaid</b> Payment requires <b>email</b> and <b>password</b>. Citrus User account will be created by using email and password combination. We call it prepaid account.</li>
+</ul>
+
+<p>This is enhanced <a href="docs/Version%20History.md">version</a> of SDK V2 wherein you can implement your App with features such as:</p>
+
+<ul>
+<li>Pay using Credit Card/Debit Card &amp; Netbanking </li>
+<li>Pay Using Citrus Cash - user can make a payment using Citrus Cash account if he has sufficient amount for payment. </li>
+<li>Get Citrus Cash balance</li>
+<li>Load Money – money can be loaded to user’s account using CC/DC/NB option.</li>
+<li>Save Cards and Bank options to user account for faster checkout</li>
+<li>Fetch Saved cards of user</li>
+<li>Delete Cards</li>
+<li>Send Money</li>
+<li>Logout your user from App</li>
+<li>Withdraw your Money</li>
+</ul>
+
+<h5>
+<a id="few-more-points-on-sdk-v3" class="anchor" href="#few-more-points-on-sdk-v3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Few more points on SDK V3</h5>
+
+<hr>
+
+<ul>
+<li>SDK response time optimization-  over 5x faster response compared to V2</li>
+<li>Everything is Object now. No more JSON parsing required.</li>
+<li>Improved WebView. WebView is handled by SDK.<br>
+</li>
+<li>Uniform responses from SDK across different API’s</li>
+<li>Support for Citrus Cash.</li>
+<li>Added support to gradle/Android Studio</li>
+<li>Less Integration Time Required.</li>
+<li>Zero click payment using Citrus Cash.</li>
+</ul>
+
+<h2>
+<a id="-prerequisites-" class="anchor" href="#-prerequisites-" aria-hidden="true"><span class="octicon octicon-link"></span></a> Prerequisites </h2>
+
+<ul>
+<li><a href="docs/Prerequisite.md" target="_blank">Before you Start</a></li>
+</ul>
+
+<h2>
+<a id="lets-start" class="anchor" href="#lets-start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lets Start...</h2>
+
+<p><b>Initiation</b></p>
+
+<ul>
+<li><a href="docs/InitSDK.md" target="_blank">Initiate Citrus SDK</a></li>
+<li><a href="docs/enable%20logs%20.md" target="_blank">How to enable logs </a></li>
+</ul>
+
+<p><b> Implementation for User creation and management </b></p>
+
+<ul>
+<li><a href="docs/isUserSignedIn.md" target="_blank">See if the User is logged/Signed in   </a></li>
+<li><a href="docs/isCitrusMember.md" target="_blank">To check if the User is a Citrus member or not? </a></li>
+<li><a href="docs/Sign%20Up%20User.md" target="_blank">SignUp User </a></li>
+<li><a href="docs/Sign%20In%20User.md" target="_blank">SignIn User </a></li>
+<li><a href="docs/Reset%20Password.md" target="_blank">Reset Password </a></li>
+<li><a href="docs/Logout.md" target="_blank">Logout the User </a></li>
+</ul>
+
+<p><b> Get Payment Options</b></p>
+
+<ul>
+<li>
+<a href="docs/Fetch%20payment%20options.md" target="_blank">Fetch Normal(PG) Payment Options </a>(Required while making a <b>Normal</b> payment)</li>
+<li>
+<a href="docs/fetch%20load%20money%20options.md" target="_blank">Fetch Load Money Payment Options </a>(Required during <b>Adding/Loading</b> Money to Wallet)</li>
+</ul>
+
+<p><b>Wallet</b></p>
+
+<ul>
+<li>
+<a href="docs/Get%20Balance.md" target="_blank">Get Citrus Cash balance </a>(<b>Note:</b> User should be <b>Signed In</b> for this Implementation)</li>
+<li><a href="docs/Load%20Money.md" target="_blank">Add Money/Load Money into Citrus Account </a></li>
+<li><a href="docs/Load%20using%20Saved%20Card%20&amp;%20Net%20bank.md" target="_blank">Add Money/Load Money into Citrus Account using Saved cards </a></li>
+</ul>
+
+<p><b>Payment</b></p>
+
+<ul>
+<li><a href="docs/CC%20%2CDC%20%2CNB%20Direct%20Payment.md" target="_blank">Pay using Credit/Debit Card &amp; Net Banking</a></li>
+<li>
+<a href="docs/Get%20Wallet.md" target="_blank">Get Wallet</a> (It fetches all Saved Cards and Bank options of the User's account)</li>
+<li><a href="docs/Pay%20Using%20Saved%20Cards%20and%20Bank.md" target="_blank">Pay using Saved Cards and Net banking</a></li>
+<li>
+<a href="docs/Pay%20using%20Citrus%20Cash.md" target="_blank">Pay using Citrus Cash</a> (<b>Note:</b> User should be <b>Signed In</b> for this Implementation)</li>
+</ul>
+
+<p><b>How to save Cards option and Banks</b></p>
+
+<ul>
+<li><a href="docs/Save%20payment%20option.md" target="_blank">Save Debit/Credit Card and Net banking</a></li>
+</ul>
+
+<p><b>Others...</b></p>
+
+<ul>
+<li><a href="docs/Send%20Money.md" target="_blank">Send Money To Your Friend</a></li>
+<li><a href="docs/Withdraw.md" target="_blank">Withdraw Money to Your Account</a></li>
+</ul>
+
+<hr>
+
+<h5>
+<a id="how-to-go-live" class="anchor" href="#how-to-go-live" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Go Live...</h5>
+
+<ul>
+<li><a href="docs/Backend%20Files%20Changes.md" target="_blank">Changes inside Bill Generator and Returl Url Files</a></li>
+<li><a href="docs/Go%20Live.md" target="_blank">Keys and Environment inside citrusClient.init</a></li>
+<li>
+<a href="docs/Progaurd%20changes.md" target="_blank">Progaurd changes</a>(If required)</li>
+</ul>
+
+<hr>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/citruspay/citrus-android-sdk">Citrus-android-sdk</a> is maintained by <a href="https://github.com/citruspay">citruspay</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
