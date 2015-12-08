@@ -4,4 +4,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" android:showAsAction="never" />
 </menu>
-<!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/menu/menu_citrus.xml -->
+<!-- From: file:/home/vijay/Desktop/Faasos/open-android-v3/citruslibrary/res/menu/menu_citrus.xml -->
