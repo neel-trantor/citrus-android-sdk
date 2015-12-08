@@ -16,6 +16,7 @@
         android:layout_height="match_parent"
         android:alpha="0.5"
         android:background="#242424"
+        android:clickable="true"
         android:visibility="gone" />
 
     <FrameLayout
@@ -46,4 +47,3 @@
 
     </FrameLayout>
 </RelativeLayout>
-<!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/layout/activity_citrus.xml -->
