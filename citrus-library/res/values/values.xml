@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="OTPPopupView"><attr format="string" name="exampleString"/><attr format="dimension" name="exampleDimension"/><attr format="color" name="exampleColor"/><attr format="color|reference" name="exampleDrawable"/></declare-styleable>
-    <!-- From: file:/home/vijay/Desktop/Faasos/open-android-v3/citruslibrary/res/values/dimens.xml -->
+    <!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="citrus_activity_horizontal_margin">16dp</dimen>
     <dimen name="citrus_activity_vertical_margin">16dp</dimen>
@@ -29,7 +29,7 @@
     <dimen name="otp_options_layout_top_margin">20dp</dimen>
     <dimen name="otp_options_send_otp_layout_margin_left">10dp</dimen>
     <dimen name="otp_options_send_otp_textsize">10dp</dimen>
-    <!-- From: file:/home/vijay/Desktop/Faasos/open-android-v3/citruslibrary/res/values/strings.xml -->
+    <!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Citruslibrary</string>
@@ -39,14 +39,14 @@
     <string name="otp_autodetect_header_text">We are trying to auto detect your OTP</string>
     <string name="otp_autodetect_resend_btn_text">Resend</string>
     <string name="otp_cancel_transaction_text"><u>Cancel Transaction</u></string>
-    <string name="otp_detection_failed_text">We were unable to detect your OTP,\nPlease check your SMS and enter manually to proceed. Click on Resend if you have not received SMS.</string>
+    <string name="otp_detection_failed_text">We were unable to detect your OTP,\nPlease check your SMS and enter manually to proceed</string>
     <string name="otp_detection_success_text">Your OTP was successfully detected</string>
     <string name="otp_options_enter_pass_text">Enter Password</string>
     <string name="otp_options_header_text">Please select an option to continue with the transaction</string>
     <string name="otp_options_send_otp_text">Send OTP</string>
     <string name="otp_secured_text">Secured</string>
     <string name="title_activity_citrus">CitrusActivity</string>
-    <!-- From: file:/home/vijay/Desktop/Faasos/open-android-v3/citruslibrary/res/values/styles.xml -->
+    <!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

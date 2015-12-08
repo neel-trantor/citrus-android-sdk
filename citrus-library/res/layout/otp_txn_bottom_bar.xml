@@ -27,7 +27,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
             android:layout_margin="@dimen/otp_bottom_bar_secured_image_top_margin"
             android:background="@drawable/secured" />
 
@@ -69,4 +68,4 @@
             android:textSize="@dimen/otp_bottom_bar_secured_text_size" />
 
     </RelativeLayout>
-</RelativeLayout><!-- From: file:/home/vijay/Desktop/Faasos/open-android-v3/citruslibrary/res/layout/otp_txn_bottom_bar.xml -->
+</RelativeLayout><!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/layout/otp_txn_bottom_bar.xml -->

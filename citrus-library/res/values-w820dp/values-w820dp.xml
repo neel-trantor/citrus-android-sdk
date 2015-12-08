@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/vijay/Desktop/Faasos/open-android-v3/citruslibrary/res/values-w820dp/dimens.xml -->
+    <!-- From: file:/home/salil/codebase/citrus/open-android-v3/citruslibrary/res/values-w820dp/dimens.xml -->
     <eat-comment/>
     <dimen name="citrus_activity_horizontal_margin">64dp</dimen>
 </resources>
